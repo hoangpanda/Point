@@ -11,10 +11,10 @@ Object::Object(bool evil, double x,double y, double len)
 void Object::UpdatePosn()
 {
     double deltaTime = 1;
-    velocity.Vx = velocity.Vx + acceleration.Ax*deltaTime;
-    posn.x = posn.x + velocity.Vx*deltaTime;
-    velocity.Vy = velocity.Vy + acceleration.Ay*deltaTime;
-    posn.y = posn.y + velocity.Vy*deltaTime;
+    velocity.Vx = velocity.Vx + acceleration.Ax*deltaTime; // vx = v0_x + a_x*t
+    posn.x = posn.x + velocity.Vx*deltaTime; // x = x0 + vx*t
+    velocity.Vy = velocity.Vy + acceleration.Ay*deltaTime; // vy = v0_y + a_y*t
+    posn.y = posn.y + velocity.Vy*deltaTime; // y = y0 + vy*t
 }
 
 //getters
