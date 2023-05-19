@@ -315,8 +315,8 @@ int main(int argc, char* args[])
 
     gTextTexture.free();
     gTextTexture1.free();
-	gTextTexture2.free();
-	gTextTexture3.free();
+    gTextTexture2.free();
+    gTextTexture3.free();
     gTextTexture4.free();
     gTextTexture5.free();
     gTextTexture6.free();
